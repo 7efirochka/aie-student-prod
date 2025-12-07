@@ -1,0 +1,13 @@
+user_id,categories,purchse,cost,date
+01,kitchen,1,100,None
+02,dishes,1,55,None
+03,decor,1,32,None
+04,bathroom,1,61,None
+05,dishes,1,23,01_03_2025
+06,office,1,43,None
+07,plant,1,18,12_11_2024
+08,food,1,13,None
+09,drink,1,11,None
+06,office,1,75,None
+11,class,1,80,None
+

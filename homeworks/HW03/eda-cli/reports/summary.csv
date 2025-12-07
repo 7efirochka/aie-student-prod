@@ -1,0 +1,6 @@
+name,dtype,non_null,missing,missing_share,unique,is_numeric,min,max,mean,std
+user_id,int64,11,0,0.0,10,True,1.0,11.0,5.636363636363637,3.042128441493793
+categories,object,11,0,0.0,9,False,,,,
+purchse,int64,11,0,0.0,1,True,1.0,1.0,1.0,0.0
+cost,int64,11,0,0.0,11,True,11.0,100.0,46.45454545454545,30.081102494302417
+date,object,2,9,0.8181818181818182,2,False,,,,

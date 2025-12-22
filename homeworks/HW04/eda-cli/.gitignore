@@ -6,5 +6,9 @@ dist/
 wheels/
 *.egg-info
 
+# Все каталоги reports и reports_example в любом месте проекта
+reports/
+reports_example/
+
 # Virtual environments
 .venv

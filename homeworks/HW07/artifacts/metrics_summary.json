@@ -1,0 +1,56 @@
+[
+  {
+    "dataset": "Dataset №1",
+    "model": "Kmean",
+    "noise_points": 0,
+    "noise_ratio": 0.0,
+    "sihouette_score": 0.5216395622404242,
+    "davies_bouldin_score": 0.6853295219054456,
+    "calinski_harabasz_score": 11786.954622671532
+  },
+  {
+    "dataset": "Dataset №1",
+    "model": "DBSCAN",
+    "noise_points": 0,
+    "noise_ratio": 0.0,
+    "sihouette_score": 0.3967888223601393,
+    "davies_bouldin_score": 0.9644102343879996,
+    "calinski_harabasz_score": 10446.597694416178
+  },
+  {
+    "dataset": "Dataset №2",
+    "model": "KMeans",
+    "noise_points": 0,
+    "noise_ratio": 0.0,
+    "sihouette_score": 0.3068610017701601,
+    "davies_bouldin_score": 1.3234721699867644,
+    "calinski_harabasz_score": 3573.3933329348392
+  },
+  {
+    "dataset": "Dataset №2",
+    "model": "AgglomerativeClustering",
+    "noise_points": 0,
+    "noise_ratio": 0.0,
+    "sihouette_score": 0.2658744116185544,
+    "davies_bouldin_score": 1.4673684423118982,
+    "calinski_harabasz_score": 2929.7223479920044
+  },
+  {
+    "dataset": "Dataset №4",
+    "model": "KMeans",
+    "noise_points": 0,
+    "noise_ratio": 0.0,
+    "sihouette_score": 0.4480173757704073,
+    "davies_bouldin_score": 0.9756940955278773,
+    "calinski_harabasz_score": 5103.099776986093
+  },
+  {
+    "dataset": "Dataset №4",
+    "model": "DBSCAN",
+    "noise_points": 5,
+    "noise_ratio": 0.0005,
+    "sihouette_score": 0.4481166925611092,
+    "davies_bouldin_score": 0.9754672333344209,
+    "calinski_harabasz_score": 5104.453680939717
+  }
+]

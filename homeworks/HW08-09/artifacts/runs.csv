@@ -1,0 +1,8 @@
+experiment_id,dataset,seed,model_summary,epochs_trained,best_val_accuracy,best_val_loss
+E1_complex_baseline,EMNIST,42,"{'hidden_sizes': (64, 32), 'activation': 'ReLu', 'dropout': 0.0, 'batchnorm': False, 'lr': 0.001, 'momentum': 0, 'weight_decay': 0}",20,0.7933,1.226
+E2_dropout,EMNIST,42,"{'hidden_sizes': (64, 32), 'activation': 'ReLu', 'dropout': 0.3, 'batchnorm': False, 'lr': 0.001, 'momentum': 0, 'weight_decay': 0}",20,0.6978,1.56
+E3_batchnorm,EMNIST,42,"{'hidden_sizes': (64, 32), 'activation': 'ReLu', 'dropout': 0.0, 'batchnorm': True, 'lr': 0.001, 'momentum': 0, 'weight_decay': 0}",20,0.8233,0.9129
+E4_early_stopping,EMNIST,42,"{'hidden_sizes': (64, 32), 'activation': 'ReLu', 'dropout': 0.3, 'batchnorm': True, 'lr': 0.001, 'momentum': 0, 'weight_decay': 0}",20,0.7678,1.2714
+O1_high_lr_model,EMNIST,42,"{'hidden_sizes': (64, 32), 'activation': 'ReLu', 'dropout': 0.3, 'batchnorm': True, 'lr': 0.1, 'momentum': 0, 'weight_decay': 0}",8,0.691,1.2709
+O2_low_lr_model,EMNIST,42,"{'hidden_sizes': (64, 32), 'activation': 'ReLu', 'dropout': 0.3, 'batchnorm': True, 'lr': 1e-05, 'momentum': 0, 'weight_decay': 0}",8,0.365,3.6833
+O3_SGD_momentum,EMNIST,42,"{'hidden_sizes': (64, 32), 'activation': 'ReLu', 'dropout': 0.3, 'batchnorm': True, 'lr': 0.001, 'momentum': 0.9, 'weight_decay': 0.0001}",12,0.7155,2.9404

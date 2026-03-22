@@ -57,3 +57,7 @@ logs/
 *.old
 
 **/data/EMNIST/
+
+**/data/
+
+**/data_voc/

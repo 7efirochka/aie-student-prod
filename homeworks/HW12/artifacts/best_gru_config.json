@@ -1,0 +1,17 @@
+{
+    "experiment_id": "R1",
+    "task": "forecasting",
+    "dataset": "S12-hw-dataset",
+    "seed": 42,
+    "hidden_dims": 64,
+    "num_layers": 1,
+    "input_size": 1,
+    "dropout_p": 0.0,
+    "use_batchnorm": true,
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "epochs": 30,
+    "test_mae": 7.073858737945557,
+    "test_rmse": 8.886060672749492,
+    "test_mape": 4.553678035736084
+}

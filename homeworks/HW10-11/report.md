@@ -27,7 +27,7 @@
 ### 3.2. Часть B: structured vision
 
 - Датасет: `Pascal VOC`
-- Трек: `detection`
+- Трек: detection
 - Что считается ground truth: Аннотации из XML-файлов датасета Pascal VOC
 - Какие предсказания использовались:  Faster R-CNN ResNet-50 FPN (веса COCO_V1 из torchvision)
 - Комментарий (2-4 предложения): почему эта постановка разумна для выбранного датасета 
@@ -79,7 +79,7 @@
 - Кривые лучшего прогона классификации: `./artifacts/figures/classification_curves_best.png`
 - Сравнение C1-C4: `./artifacts/figures/classification_compare.png`
 - Визуализация аугментаций: `./artifacts/figures/augmentations_preview.png`
-- Визуализации второй части: `./artifacts/figures/...`
+- Визуализации второй части: `./artifacts/figures/detection_examples.png` , `./artifacts/figures/detection_metrics.png`
 
 Короткая сводка (6-10 строк):
 

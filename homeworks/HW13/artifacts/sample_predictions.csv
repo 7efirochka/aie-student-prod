@@ -1,0 +1,21 @@
+,text,true_label,pred_label,confidence
+0,[CLS] im feeling rather rotten so im not very ambitious right now [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],sadness,joy,0.59252435
+1,[CLS] im updating my blog because i feel shitty [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],sadness,sadness,0.71102613
+2,[CLS] i never make her separate from me because i don t ever want her to feel like i m ashamed with her [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],sadness,sadness,0.7876426
+3,[CLS] i left with my bouquet of red and yellow tulips under my arm feeling slightly more optimistic than when i arrived [SEP] [PAD] [PAD] [PAD] [PAD] [PAD],joy,joy,0.8341118
+4,[CLS] i was feeling a little vain when i did this one [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],sadness,sadness,0.65869516
+5,[CLS] i cant walk into a shop anywhere where i do not feel uncomfortable [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],fear,sadness,0.52946776
+6,[CLS] i felt anger when at the end of a telephone call [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],anger,anger,0.52113146
+7,[CLS] i explain why i clung to a relationship with a boy who was in many ways immature and uncommitted despite the excitement i [SEP],joy,sadness,0.7280216
+8,[CLS] i like to have the same breathless feeling as a reader eager to see what will happen next [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],joy,joy,0.7420915
+9,[CLS] i jest i feel grumpy tired and pre menstrual which i probably am but then again its only been a week and im about as [SEP],anger,anger,0.39712647
+10,[CLS] i don t feel particularly agitated [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],fear,anger,0.5134681
+11,[CLS] i feel beautifully emotional knowing that these women of whom i knew just a handful were holding me and my baba on our journey [SEP] [PAD] [PAD] [PAD],sadness,joy,0.6667068
+12,[CLS] i pay attention it deepens into a feeling of being invaded and helpless [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],fear,sadness,0.5782686
+13,[CLS] i just feel extremely comfortable with the group of people that i dont even need to hide myself [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],joy,joy,0.77789235
+14,[CLS] i find myself in the odd position of feeling supportive of [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],love,joy,0.7545535
+15,[CLS] i was feeling as heartbroken as im sure katniss was [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],sadness,sadness,0.7280337
+16,[CLS] i feel a little mellow today [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],joy,joy,0.81181175
+17,[CLS] i feel like my only role now would be to tear your sails with my pessimism and discontent [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],sadness,sadness,0.5333026
+18,[CLS] i feel just bcoz a fight we get mad to each other n u wanna make a publicity n let the world knows about our [SEP],anger,joy,0.49059412
+19,[CLS] i feel like reds and purples are just so rich and kind of perfect [SEP] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD] [PAD],joy,joy,0.7874181

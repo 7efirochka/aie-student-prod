@@ -61,3 +61,5 @@ logs/
 **/data/
 
 **/data_voc/
+
+**/emotion_results/

@@ -100,12 +100,12 @@ python -m src.data.create_dataset
 uv run python -m src.data.create_dataset
 ```
 
-### 4.2. Запуск обучения модели (Опционально, если меняете датасет)
+### 4.2. Запуск обучения модели
 
 Перед запуском API необходимо обучить модель и сохранить артефакты в папку artifacts/:
 
 ```bash
-python -m src.models.train_hybrid_model
+python -m src.models.train
 ```
 После выполнения в папке artifacts/ появятся файлы cosine_hybrid_matrix.npy и encoders.joblib.
 

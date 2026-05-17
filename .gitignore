@@ -63,3 +63,6 @@ logs/
 **/data_voc/
 
 **/emotion_results/
+
+project/artifacts/cosine_hybrid_matrix.npy
+project/artifacts/encoders.joblib

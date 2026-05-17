@@ -50,6 +50,13 @@ def get_movies_by_year(year, max_pages=10):
         for i in results:
             i["release_date"] = i["release_date"][:4]
             i["genre_ids"] = list(map(lambda x: genre_map_api[x], i["genre_ids"]))
+            if (
+                "Crime" in i["genre_ids"]
+                or "Horror" in i["genre_ids"]
+                or "Thriller" in i["genre_ids"]
+                or "War" in i["genre_ids"]
+            ):
+                i["adult"] = True
         all_year_movies.extend(results)
 
     return all_year_movies

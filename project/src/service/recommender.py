@@ -52,7 +52,7 @@ class MovieRecommender:
 
         return indices, not_found
 
-    def recommend(self, query_titles, n=5, min_year=None):
+    def recommend(self, query_titles, n=5, min_year=None, adult=None):
         raw_titles = [i.strip() for i in query_titles.split(",") if i.strip()]
         if not raw_titles:
             return {"error": "Please write at least one movie title."}
@@ -71,7 +71,7 @@ class MovieRecommender:
         for idx in seed_indices:
             avg_sim_scores[idx] = -1
 
-        top_indices = np.argsort(avg_sim_scores)[-n - 70 :]
+        top_indices = np.argsort(avg_sim_scores)[-n - 150 :]
         top_indices = top_indices[::-1]
 
         candidates = self.df.iloc[top_indices].copy()
@@ -79,6 +79,9 @@ class MovieRecommender:
 
         if min_year is not None:
             candidates = candidates[candidates["year"] >= min_year]
+
+        if adult == False:
+            candidates = candidates[candidates["adult"] == False]
 
         candidates = candidates.sort_values(
             by=["sim_score", "rating"], ascending=[False, False]
@@ -95,6 +98,7 @@ class MovieRecommender:
                     "year": int(row["year"]) if pd.notna(row["year"]) else None,
                     "rating": round(float(row["rating"]), 1),
                     "genres": row["genres"],
+                    "adult": row["adult"],
                     "similarity_score": round(float(row["sim_score"]), 4),
                 }
             )

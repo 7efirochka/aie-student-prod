@@ -15,6 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 DATA_PATH = BASE_DIR / "data" / "movies_1990_2026.csv"
 ARTIFACTS_DIR = BASE_DIR / "artifacts"
 
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global recommender
@@ -37,6 +38,7 @@ class RecommendationRequest(BaseModel):
     titles: str
     n: Optional[int] = 5
     min_year: Optional[int] = None
+    adult: Optional[bool] = True
 
 
 @app.get("/")
@@ -48,7 +50,7 @@ async def root():
 async def reccommend(request: RecommendationRequest):
     try:
         recommendations = recommender.recommend(
-            request.titles, request.n, request.min_year
+            request.titles, request.n, request.min_year, request.adult
         )
         return {"recommendations": recommendations}
 

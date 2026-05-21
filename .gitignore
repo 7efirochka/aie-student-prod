@@ -66,3 +66,4 @@ logs/
 
 project/artifacts/cosine_hybrid_matrix.npy
 project/artifacts/encoders.joblib
+project/artifacts/cosine_description_matrix.npy

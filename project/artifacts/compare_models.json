@@ -1,0 +1,106 @@
+{
+  "hybride_model": {
+    "test_1": {
+      "valid_genres": 5,
+      "result": "success ✅️"
+    },
+    "test_2": {
+      "valid_genres": 5,
+      "adult_films": 0,
+      "wrong_genres": 0,
+      "result": "success ✅️"
+    },
+    "test_3": {
+      "valid_genres": 3,
+      "adult_films": 5,
+      "wrong_genres": 0,
+      "result": "success ✅️"
+    },
+    "test_4": {
+      "valid_genres": 4,
+      "result": "success ✅️"
+    },
+    "test_5": {
+      "avg_rating": 6.44,
+      "result": "success ✅️"
+    }
+  },
+  "description_model": {
+    "test_1": {
+      "valid_genres": 5,
+      "result": "success ✅️"
+    },
+    "test_2": {
+      "valid_genres": 2,
+      "adult_films": 0,
+      "wrong_genres": 3,
+      "result": "fail ❌"
+    },
+    "test_3": {
+      "valid_genres": 1,
+      "adult_films": 2,
+      "wrong_genres": 0,
+      "result": "fail ❌"
+    },
+    "test_4": {
+      "valid_genres": 4,
+      "result": "success ✅️"
+    },
+    "test_5": {
+      "avg_rating": 6.8,
+      "result": "success ✅️"
+    }
+  },
+  "popular": {
+    "test_1": {
+      "valid_genres": 0,
+      "result": "fail ❌"
+    },
+    "test_2": {
+      "valid_genres": 0,
+      "adult_films": 0,
+      "wrong_genres": 1,
+      "result": "fail ❌"
+    },
+    "test_3": {
+      "valid_genres": 0,
+      "adult_films": 1,
+      "wrong_genres": 0,
+      "result": "fail ❌"
+    },
+    "test_4": {
+      "valid_genres": 0,
+      "result": "fail ❌"
+    },
+    "test_5": {
+      "avg_rating": 10.0,
+      "result": "success ✅️"
+    }
+  },
+  "random": {
+    "test_1": {
+      "valid_genres": 2,
+      "result": "fail ❌"
+    },
+    "test_2": {
+      "valid_genres": 0,
+      "adult_films": 5,
+      "wrong_genres": 3,
+      "result": "fail ❌"
+    },
+    "test_3": {
+      "valid_genres": 0,
+      "adult_films": 2,
+      "wrong_genres": 0,
+      "result": "fail ❌"
+    },
+    "test_4": {
+      "valid_genres": 1,
+      "result": "fail ❌"
+    },
+    "test_5": {
+      "avg_rating": 7.0600000000000005,
+      "result": "success ✅️"
+    }
+  }
+}

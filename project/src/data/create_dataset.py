@@ -100,5 +100,6 @@ df = df.rename(
 )
 
 df_clean = df.dropna(subset=["description", "genres", "year", "rating"])
+df_clean = df.drop_duplicates(keep="first", inplace=True)
 
 df_clean.to_csv(DATA_PATH / "movies_1990_2026.csv", index=False)

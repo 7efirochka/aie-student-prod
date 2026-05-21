@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.git/
+.gitignore
+data/
+artifacts/
+configs/.env
+*.md
+*.csv
+*.npy
+*.joblib
+*.png
+*.json
+notebooks/
+.pytest_cache/

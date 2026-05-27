@@ -9,7 +9,7 @@
 - **Контакт:** `s7ombra@gmail.com`
 
 - **Краткое описание (2-4 предложения):**  
-  `Проект представляет собой REST API-сервис для рекомендаций фильмов на основе контентного подхода. Система использует гибридную модель, объединяющую информацию о жанрах (через MultiLabelBinarizer) и текстовые описания фильмов (через TF-IDF векторизацию). Для поиска похожих картин вычисляется косинусное сходство между векторами признаков. Сервис позволяет пользователю ввести названия нескольких любимых фильмов и получить список наиболее релевантных рекомендаций с учетом года выпуска и рейтинга.`
+  Проект представляет собой REST API-сервис для рекомендаций фильмов на основе контентного подхода. Система использует гибридную модель, объединяющую информацию о жанрах (через MultiLabelBinarizer) и текстовые описания фильмов (через TF-IDF векторизацию). Для поиска похожих картин вычисляется косинусное сходство между векторами признаков. Сервис позволяет пользователю ввести названия нескольких любимых фильмов и получить список наиболее релевантных рекомендаций с учетом года выпуска и рейтинга.
 
 
 ## 2. Структура проекта
@@ -55,14 +55,14 @@
 
 ### 3.2. Установка окружения
 
-Примерный сценарий (можно адаптировать под ваш проект):
+Примерный сценарий:
 
 ```bash
 # Клонирование репозитория:
 git clone https://github.com/7efirochka/aie-student-prod.git
 cd project
 
-# Создание виртуального окружения
+# Создание виртуального окружения:
 python -m venv .venv
 
 # Активировать окружение:
@@ -71,11 +71,10 @@ python -m venv .venv
 # Linux / macOS:
 source .venv/bin/activate
 
-# Установить зависимости
+# Установить зависимости:
 pip install -r requirements.txt
 
-# или
-
+#  Установка зависимостей через uv:
 uv sync
 ```
 
@@ -98,6 +97,10 @@ TMDB_API_KEY='your_api_key_here'
 Запуск программы сбора данных (убедитесь, что вы находитесь в директории `project`):
 
 ```bash
+#  Запустить модуль:
+python -m src.data.create_dataset
+
+#  Запуск через uv:
 uv run python -m src.data.create_dataset
 ```
 
@@ -106,6 +109,10 @@ uv run python -m src.data.create_dataset
 Перед запуском API необходимо обучить модель и сохранить артефакты в папку artifacts/:
 
 ```bash
+#  Запустить модуль:
+python -m src.models.train
+
+#  Запуск через uv:
 uv run python -m src.models.train
 ```
 После выполнения в папке artifacts/ появятся файлы `cosine_hybrid_matrix.npy` и `encoders.joblib`.
@@ -115,6 +122,10 @@ uv run python -m src.models.train
 Способ 1: Локальный запуск через Uvicorn
 
 ```bash
+#   Запуск uvicorn
+uvicorn src.service.api:app --reload --host 0.0.0.0 --port 8000
+
+#   Запуск uvicorn через uv
 uv run uvicorn src.service.api:app --reload --host 0.0.0.0 --port 8000
 ```
 
@@ -124,9 +135,8 @@ uv run uvicorn src.service.api:app --reload --host 0.0.0.0 --port 8000
 Способ 2: Запуск с помощью Docker:
 
 ```bash
-cd project
 docker build -t movie-recommender .
-docker run -d -p 8000:8000 -v ${PWD}/data:/app/data -v ${PWD}/artifacts:/app/artifacts --name movie-api movie-recommender
+docker run -d -p 8000:8000 -v ${pwd}/data:/app/data -v ${pwd}/artifacts:/app/artifacts --name movie-api movie-recommender
 ```
 
 Остановка контейнера:
@@ -140,15 +150,19 @@ docker stop movie-api
 
 ### 4.4. Запуск бейзлайнов и тестов
 
-С бейзлайнами и тестами можно ознакомиться в папке `project/src/models/compare_models.py`
+С бейзлайнами и тестами можно ознакомиться в папке: `project/src/models/compare_models.py`.
 
 Запуск тестов для бейзлайнов и итоговой модели:
 
 ```bash
+#  Запустить модуль:
+python -m src.models.compare_models
+
+#  Запуск через uv:
 uv run python -m src.models.compare_models
 ```
 
-Результаты тестов будут в папке: `artifacts/compare_models.json`
+Результаты тестов находятся в папке: `artifacts/compare_models.json`
 ---
 
 ## 5. Данные
@@ -185,6 +199,9 @@ uv run python -m src.models.compare_models
 Для запуска всех тестов выполните из корня проекта:
 
 ```bash
+pytest tests/test_api.py
+
+#  Запуск через uv:
 uv run pytest tests/test_api.py
 ```
 
@@ -200,7 +217,7 @@ uv run pytest tests/test_api.py
     - Запущу сервер через `uvicorn`  с помощью `uv run uvicorn src.service.api:app --reload --host 0.0.0.0 --port 8000`.
     - Открою Swagger UI (/docs).
     - Выполню запрос с несколькими фильмами (например, "Interstellar, Inception"). 
-    - Продемонстрирую, как система возвращает рекомендуемые фильмы, исключая сами запрошенные тайтлы и соблюдая фильтр по году (если указан).
+    - Продемонстрирую, как система возвращает рекомендуемые фильмы, исключая сами запрошенные тайтлы и соблюдая фильтр по году.
 
 ---
 

@@ -17,10 +17,9 @@
 | 1  | Сервис запускается по инструкциям из `project/README.md` и работает             |        ✅          | `README.md`, раздел «Как запустить»                   |
 | 2  | Endpoint `/recommend` использует **реальную модель**, а не заглушку             |        ✅          | `src/service/`                                        |
 | 3  | Есть EDA и хотя бы один эксперимент с метриками                                 |        ✅          | `notebooks/data_process.ipynb`, `report.md`           |
-| 4  | Есть baseline и улучшенная модель, есть **сравнение по метрикам**               |        ✅          | `src/models/compare_models.py`,                       |
-|    |                                                                                 |                    |  `artifacts/compare_mpdels.json`                      |
+| 4  | Есть baseline и улучшенная модель, есть **сравнение по метрикам**               |        ✅          | `src/models/compare_models.py`,`artifacts/compare_mpdels.json`                      |
 | 5  | Код не свален в один ноутбук: есть внятная структура в `src/`                   |        ✅          | `src/data/`, `src/models/`, `src/service/`            |
-| 6  | Есть Dockerfile **или** понятный сценарий развёртывания без Docker              |        ✅          |  `Dockerfile`, шаги в `README.md`                     |
+| 6  | Есть Dockerfile **или** понятный сценарий развёртывания без Docker              |        ✅          |  `Dockerfile`, шаги в `README.md` раздел  «4.3. Запуск сервиса (FastAPI/Docker)»|
 | 7  | Есть `.env.example` и **нет** в репозитории реальных секретов/паролей           |        ✅          | `.env.example`                                        |
 | 8  | Реализованы логи/наблюдаемость (хотя бы консольные логи + `/health`)            |        ✅          | Использование `logging`, endpoint `/health`           |
 | 9  | В `report.md` **обоснован выбор финальной модели** по результатам экспериментов |        ✅          | `report.md`, разделы про результаты и выбор модели    |

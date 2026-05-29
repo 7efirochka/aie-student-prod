@@ -29,7 +29,6 @@
   - `src/service/api.py` - функционал api.
 - `data/` –  папка для хранения датасета `movies_1990_2026.csv`, созданного с помощью TMDB API.
 - `configs/` – конфигурационные файлы:
-  - `.env` – файл с API-ключом TMDB (игнорируется в Git).
   - `.env.example` - файл с API-ключом TMDB для ввода пользователем, чтобы использовать TMDB API.
 - `tests/` – тесты (юнит-тесты, простые проверки).
   - `tests/test_api.py` - pytest для тестирования основной системы.
@@ -161,8 +160,7 @@ python -m src.models.compare_models
 #  Запуск через uv:
 uv run python -m src.models.compare_models
 ```
-
-Результаты тестов находятся в папке: `artifacts/compare_models.json`
+  Результаты тестов находятся в папке: `artifacts/compare_models.json`
 ---
 
 ## 5. Данные
@@ -190,7 +188,7 @@ uv run python -m src.models.compare_models
 
 В проекте реализованы базовые тесты для проверки работоспособности системы:
 
-- Sanity-чеки - `test_root_endpoint` — проверка корневого эндпоинта /.
+- Sanity-чеки - `test_root_endpoint` — проверка корневого эндпоинта.
 - Интеграционные тесты - `test_recommend_valid_input`, `test_minimum_output_n`, `test_case_insensitive` - проверка работы API-эндпоинтов.
 - Тесты бизнес-логики - `test_exclude_match`, `test_rating_sort` - проверка специфичных правил рекомендательной системы.
 - Тесты обработки ошибок - `test_invalid_input`, `test_empty_input` - проверка корректной реакции на невалидные входные данные.
